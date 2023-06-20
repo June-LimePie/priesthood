@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "lint": "eslint . --fix --ignore-path .gitignore",
     "deploy": "yarn run build && aws s3 sync dist s3://copyswapper-prod/ && aws cloudfront create-invalidation --distribution-id EIMSO7WH082NY --paths \"/*\"",
-    "save": "git add . && git commit -m \"save\" && git push"
+    "save": "git add . && git commit -m \"save\" && git push origin master"
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
